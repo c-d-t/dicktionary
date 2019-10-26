@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dicktionary</title>
+    <meta name="author" content="Chris Tangles">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/f245a6d451.js" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <link rel="stylesheet" href="./menu/menu.css">
+</head>
+<body>
+    <header>
+        <h1 id="logo">Dicktionary</h1>
+        <p id="sub-logo">Kind of not learn new words</p>
+    </header>
+
+    <div id="menu">
+        <div id="main" class="current-menu menu-container">
+            <h2 class="menu-title">Join Game</h2>
+            <input id="join-room-input" class="menu-input" type="text" placeholder="Room ID" autocomplete="off">
+            <button id="join-room-button" class="menu-button" type="button">Join</button>
+            <h2 class="menu-title">Make New Game</h2>
+            <input id="make-room-input" class="menu-input" type="text" placeholder="Room ID" autocomplete="off">
+            <button id="make-room-button" class="menu-button" type="button">Create</button>
+        </div>
+    
+        <div id="room" class="menu-container">
+            <button id="room-to-menu-button" class="back-button" type="button"><i class="fas fa-long-arrow-alt-left"></i></button>
+            <h2 id="room-name" class="menu-title">Roomies</h2>
+            <h2 class="menu-title">Nickname</h2>
+            <input class="menu-input" type="text" placeholder="Bobbert..." autocomplete="off">
+            <button class="menu-button" type="button">Ready?</button>
+            <div id="players-ready"></div>
+        </div>
+    </div>
+
+    <script src="./menu/menu.js"></script>
+    <script src="./menu/menu-sockets.js"></script>
+</body>
+</html>

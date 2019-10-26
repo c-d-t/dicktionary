@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+html, body {
+    height: 100%;
+    background-color: #eee;
+    overflow: hidden;
+}
+input:focus, button:focus {
+    outline: none;
+}
+
+header {
+    color: #111;
+    background-color: #999;
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 0.25em;
+}
+#sub-logo {
+    color: #444;
+}
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;  
+    width: 50%;
+    min-width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: #ccc 0 5px 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+.menu-title {
+    width: 100%;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+.menu-input {
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    width: 75%;
+    min-width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #eee;
+    border-radius: 2px;
+}
+.menu-button {
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 40px;
+    width: 24%;
+    height: 40px;
+    border: none;
+    margin: 10px auto;
+    background-color: rgb(226, 187, 103);
+    border-radius: 2px;
+}
+#players-joined {
+    background-color: rgb(170, 221, 146);
+    height: 80px;
+    width: 80%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(226, 103, 103);
+}
+
+/* ANIM */
+.current-menu {
+    visibility: visible;
+}
+
+.slide-right-out {
+    animation: slideRightOutAnim 400ms cubic-bezier(.01,1.27,.52,1.12) forwards;
+}
+
+.slide-right-in {
+    animation: slideRightInAnim 400ms cubic-bezier(.01,1.27,.52,1.12) forwards;
+}
+
+.slide-left-out {
+    animation: slideLeftOutAnim 400ms cubic-bezier(.01,1.27,.52,1.12) forwards;
+}
+
+.slide-left-in {
+    animation: slideLeftInAnim 400ms cubic-bezier(.01,1.27,.52,1.12) forwards;
+}
+
+@keyframes slideRightOutAnim {
+    from {}
+    to {transform: translate(100%, -50%)}
+}
+
+@keyframes slideRightInAnim {
+    from {transform: translate(-200%, -50%)}
+    to {transform: translate(-50%, -50%)}
+}
+
+@keyframes slideLeftOutAnim {
+    from {}
+    to {transform: translate(-200%, -50%)}
+}
+
+@keyframes slideLeftInAnim {
+    from {transform: translate(100%, -50%)}
+    to {transform: translate(-50%, -50%)}
+}
