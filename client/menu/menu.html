@@ -19,7 +19,13 @@
         <p id="sub-logo">Kind of not learn new words</p>
     </header>
 
-    <div id="menu">
+    <div id="gamebox"></div>
+
+
+    <!--
+        Menu Template
+    -->
+    <template id="menu">
         <div id="main" class="current-menu menu-container">
             <h2 class="menu-title">Join Game</h2>
             <input id="join-room-input" class="menu-input" type="text" placeholder="Room ID" autocomplete="off">
@@ -29,17 +35,29 @@
             <button id="make-room-button" class="menu-button" type="button">Create</button>
         </div>
     
-        <div id="room" class="menu-container">
-            <button id="room-to-menu-button" class="back-button" type="button"><i class="fas fa-long-arrow-alt-left"></i></button>
+        <div id="nickname" class="menu-container">
+            <button id="nickname-to-menu-button" class="back-button" type="button"><i class="fas fa-long-arrow-alt-left"></i></button>
             <h2 id="room-name" class="menu-title">Roomies</h2>
             <h2 class="menu-title">Nickname</h2>
             <input class="menu-input" type="text" placeholder="Bobbert..." autocomplete="off">
-            <button class="menu-button" type="button">Ready?</button>
-            <div id="players-ready"></div>
+            <button id="choose-nickname-button" class="menu-button" type="button">Ready?</button>
         </div>
-    </div>
 
+        <div id="room" class="menu-container">
+            <button id="room-to-nickname-button" class="back-button" type="button"><i class="fas fa-long-arrow-alt-left"></i></button>
+            <h2 id="room-name" class="menu-title">Roomies</h2>
+            <button class="menu-button" type="button">Start</button>
+            <div id="players-joined"></div>
+        </div>  
+    </template>
+
+    <!--
+        Game Template
+    -->
+    <template>
+        <div id="game-name-temp">hi</div>
+    </template>
+    
     <script src="./menu/menu.js"></script>
-    <script src="./menu/menu-sockets.js"></script>
 </body>
 </html>

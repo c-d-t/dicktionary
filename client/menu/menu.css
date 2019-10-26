@@ -95,19 +95,19 @@ header {
 }
 
 .slide-right-out {
-    animation: slideRightOutAnim 400ms cubic-bezier(.01,1.27,.52,1.12) forwards;
+    animation: slideRightOutAnim 250ms cubic-bezier(.01,1.27,.52,1.12) forwards;
 }
 
 .slide-right-in {
-    animation: slideRightInAnim 400ms cubic-bezier(.01,1.27,.52,1.12) forwards;
+    animation: slideRightInAnim 250ms cubic-bezier(.01,1.27,.52,1.12) forwards;
 }
 
 .slide-left-out {
-    animation: slideLeftOutAnim 400ms cubic-bezier(.01,1.27,.52,1.12) forwards;
+    animation: slideLeftOutAnim 250ms cubic-bezier(.01,1.27,.52,1.12) forwards;
 }
 
 .slide-left-in {
-    animation: slideLeftInAnim 400ms cubic-bezier(.01,1.27,.52,1.12) forwards;
+    animation: slideLeftInAnim 250ms cubic-bezier(.01,1.27,.52,1.12) forwards;
 }
 
 @keyframes slideRightOutAnim {
