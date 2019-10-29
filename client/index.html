@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/f245a6d451.js" crossorigin="anonymous"></script>
     <script src="/socket.io/socket.io.js"></script>
 
-    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
@@ -35,7 +35,6 @@
     
         <div id="nickname" class="menu-container">
             <button id="nickname-to-main-button" class="back-button" type="button"><i class="fas fa-long-arrow-alt-left"></i></button>
-            <h2 class="room-name menu-title">Roomies</h2>
             <h2 class="menu-title">Nickname</h2>
             <input id="nickname-input" class="menu-input" type="text" placeholder="Bobbert..." autocomplete="off">
             <button id="choose-nickname-button" class="menu-button" type="button">Ready?</button>
@@ -43,19 +42,37 @@
 
         <div id="room" class="menu-container">
             <button id="room-to-nickname-button" class="back-button" type="button"><i class="fas fa-long-arrow-alt-left"></i></button>
-            <h2 class="room-name menu-title">Roomies</h2>
+            <h2 class="room-name menu-title"></h2>
             <button id="ready-button" class="menu-button" type="button">Ready?</button>
             <div id="players-joined"></div>
         </div>  
     </template>
 
-    <!--
-        Game Template
-    -->
     <template id="game">
-        <div id="game-name-temp"><h1>GAME</h1></div>
+        <h1 class="prompt">Prompt</h1>
+        <p id="instructions">some instructions on what to do here now yup</p>
+        <input id="game-input" type="text" placeholder="Enter your answer..." autocomplete="off">
+        <button id="game-submit-button" type="button">Submit</button>
+        <div class="small-countdown">20</div>
+    </template>
+
+    <template id="game-2">
+        <h1 class="prompt">Which one is correct</h1>
+        <div id="scoreboard"></div>
+        <div id="choices">
+        </div>
+        <div class="small-countdown">10</div>
+    </template>
+
+    <template id="countdown">
+        <div id="big-countdown">5</div>
+    </template>
+
+    <template id="gameover">
+        <h2 class="menu-title">game over</h2>
+        <h3 id="winner-name"></h3>
     </template>
     
-    <script src="./menu.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
