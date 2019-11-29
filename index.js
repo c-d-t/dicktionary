@@ -6,10 +6,10 @@ let PORT = process.env.PORT || 4000
 
 let app = express()
 
-app.use('/', express.static(path.join(__dirname, '/..', 'client')))
+app.use('/', express.static(path.join(__dirname, 'client')))
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/index.html'))
+    res.sendFile(path.join(__dirname, './client/index.html'))
 })
 
 let server =  app.listen(PORT, () => {
