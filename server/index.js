@@ -2,7 +2,7 @@ let express = require('express')
 let socketio = require('socket.io')
 let path = require('path')
 
-let PORT = 4000
+let PORT = process.env.PORT || 4000
 
 let app = express()
 
