@@ -8,8 +8,16 @@ Every game is made up of 5 rounds. At the start of a round, a word or definition
 The words right now are just a bunch of random words I found on a random word generator. There aren't enough yet so you can only play about one round before it starts feeling repetetive.
 
 ### made with
+<<<<<<< HEAD
 * [ExpressJS](https://expressjs.com/) - server
 * [Socket.io](https://socket.io/) - real time client/server connection
 
 ### made by
 Chris Tangles
+=======
+[ExpressJS](https://expressjs.com/) - server
+[Socket.io](https://socket.io/) - real time client/server connection
+
+### made by
+Chris Tangles
+>>>>>>> 9c99785c937c794507159c98c94fb9eb1e314ebf
