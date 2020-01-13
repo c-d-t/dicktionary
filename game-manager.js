@@ -157,12 +157,11 @@ function sendPhase(roomID) {
     //
     // give random prompt and instructions
     //
-    let random_pos = Math.floor(Math.random() * wordBank.words.length - 1)
+    let random_pos = Math.floor(Math.random() * wordBank.words.length)
     let question_type = Math.random()
     let prompt
     let instructions
     let answer
-
     if (question_type < 0.5) {
         prompt = wordBank.words[random_pos].word
         instructions = 'Give a definition for this word'
